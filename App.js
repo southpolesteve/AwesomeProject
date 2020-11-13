@@ -36,7 +36,7 @@ const App: () => React$Node = () => {
       .then((response) => {
         setTodos(response.resources);
       });
-  });
+  }, []);
   if (!todos) {
     return (
       <View style={styles.container}>
